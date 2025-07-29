@@ -1,7 +1,13 @@
-// Portfolio data - Add your content through the admin panel
-// This file will be automatically updated when you save changes in the admin
+// Auto-generated portfolio data - Upload this file to your website
+// Generated on: 2025-07-29T23:40:49.396Z
 
 window.PORTFOLIO_DATA = {
+  "personal": {
+    "fullName": "",
+    "title": "",
+    "tagline": "",
+    "profileImage": ""
+  },
   "hero": {
     "name": "",
     "title": "",
@@ -10,23 +16,50 @@ window.PORTFOLIO_DATA = {
     "buttonText": "Learn More About Me",
     "buttonUrl": "#about"
   },
-  "personal": {
-    "fullName": "",
-    "title": "",
-    "tagline": "",
-    "profileImage": ""
-  },
   "about": {
     "description": "",
     "profileImage": ""
   },
   "education": [],
-  "skills": [],
+  "skills": [
+    {
+      "id": 1753831615564,
+      "name": "grgrwwrrwwgrgrwgrwgrrg",
+      "category": "",
+      "proficiency": ""
+    },
+    {
+      "id": 1753831680808,
+      "name": "grrggrrggr",
+      "category": "",
+      "proficiency": ""
+    },
+    {
+      "id": 1753831750529,
+      "name": "rgrgwrrwrwg",
+      "category": "",
+      "proficiency": ""
+    },
+    {
+      "id": 1753832007591,
+      "name": "n n nnn. nn n",
+      "category": "",
+      "proficiency": ""
+    },
+    {
+      "id": 1753832158601,
+      "name": "hvhjhjvhjv",
+      "category": "",
+      "proficiency": ""
+    },
+    {
+      "id": 1753832449396,
+      "name": "cdddc",
+      "category": "",
+      "proficiency": ""
+    }
+  ],
   "projects": [],
-  "publications": [],
-  "podcasts": [],
-  "videos": [],
-  "awards": [],
   "contact": {
     "email": "",
     "phone": "",
@@ -35,6 +68,10 @@ window.PORTFOLIO_DATA = {
     "twitter": "",
     "website": ""
   },
+  "publications": [],
+  "podcasts": [],
+  "videos": [],
+  "awards": [],
   "settings": {
     "siteTitle": "Student Portfolio",
     "colorScheme": "blue",
@@ -49,9 +86,8 @@ if (typeof loadAllPortfolioData === 'function') {
         const existingData = localStorage.getItem('portfolioData');
         if (!existingData || existingData === '{}') {
             localStorage.setItem('portfolioData', JSON.stringify(window.PORTFOLIO_DATA));
-            console.log('Loaded empty portfolio data template');
         }
         // Always reload with current data
-        setTimeout(loadAllPortfolioData, 100);
+        loadAllPortfolioData();
     });
 }
